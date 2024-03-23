@@ -131,9 +131,9 @@ class Student(models.Model):
     spi = models.IntegerField(null=True, blank=True, default=0)
     cpi = models.IntegerField(null=True, blank=True, default=0)
     fees_paid = models.IntegerField(null=True, blank=True, default=0)
-    activity = models.JSONField(default='')
-    project = models.JSONField(default='')
-    membership_in_organization = models.JSONField(default='')
+    activity = models.JSONField(default=dict)
+    project = models.JSONField(default=dict)
+    membership_in_organization = models.JSONField(default=dict)
     fees_unpaid = models.IntegerField(default=60000)
 
     def _str_(self):
