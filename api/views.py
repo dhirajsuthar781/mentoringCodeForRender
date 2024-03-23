@@ -1,6 +1,7 @@
 import json
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render
+# from jsonschema import ValidationError
 from jsonschema import ValidationError
 from openpyxl import load_workbook
 from django.contrib.auth import models as usr
